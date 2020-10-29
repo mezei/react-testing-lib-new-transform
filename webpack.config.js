@@ -19,21 +19,7 @@ module.exports = () => {
           resolve: {
             extensions: ['.js', '.jsx'],
           },
-          use: [
-            {
-              loader: 'babel-loader',
-              options: {
-                presets: [
-                  [
-                    '@babel/preset-react',
-                    {
-                      runtime: 'automatic',
-                    },
-                  ],
-                ],
-              },
-            },
-          ],
+          use: 'babel-loader',
         },
       ],
     },
